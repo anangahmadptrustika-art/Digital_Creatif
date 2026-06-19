@@ -35,6 +35,9 @@ export default async function CheckoutPage({
         emoji={product.emoji}
         price={product.price}
         priceLabel={formatRupiah(product.price)}
+        previews={product.previews}
+        previewTabs={product.previewTabs}
+        previewFile={product.previewFile}
       />
     </main>
   );

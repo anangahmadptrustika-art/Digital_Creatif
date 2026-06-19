@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 278" font-family="Segoe UI, Arial, sans-serif">
+<rect width="980" height="278" fill="#ffffff"/>
+<rect width="980" height="18" fill="#eef2f7"/>
+<rect x="0" y="0" width="30" height="18" fill="#f3f4f6"/>
+<text x="47" y="13" font-size="10" fill="#94a3b8" text-anchor="middle">A</text>
+<text x="157" y="13" font-size="10" fill="#94a3b8" text-anchor="middle">B</text>
+<text x="345" y="13" font-size="10" fill="#94a3b8" text-anchor="middle">C</text>
+<text x="565" y="13" font-size="10" fill="#94a3b8" text-anchor="middle">D</text>
+<text x="725" y="13" font-size="10" fill="#94a3b8" text-anchor="middle">E</text>
+<text x="870" y="13" font-size="10" fill="#94a3b8" text-anchor="middle">F</text>
+<rect x="30" y="18" width="950" height="30" fill="#1e3a5f"/>
+<text x="505" y="39" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">IDENTIFIKASI BAHAYA, PENILAIAN RISIKO, PENGENDALIAN &amp; PELUANG (IBPRP)</text>
+<rect x="30" y="48" width="950" height="22" fill="#f59e0b"/>
+<text x="505" y="64" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">Elemen B.1 — Nilai &amp; Tingkat Risiko terhitung otomatis (Kekerapan × Keparahan)</text>
+<text x="36" y="83" font-size="10" fill="#64748b">Paket: Pembangunan Gedung Kantor 2 Lantai  |  Lokasi: Kab. Luwu Timur, Sulawesi Selatan</text>
+<rect x="0" y="88" width="980" height="23" fill="#dbeafe"/>
+<rect x="0" y="88" width="30" height="23" fill="#f3f4f6"/>
+<text x="47" y="104" font-size="10" font-weight="700" fill="#1f2937" text-anchor="middle">No</text>
+<text x="70" y="104" font-size="10.5" font-weight="700" fill="#1f2937" text-anchor="start">Uraian Pekerjaan</text>
+<text x="256" y="104" font-size="10.5" font-weight="700" fill="#1f2937" text-anchor="start">Identifikasi Bahaya</text>
+<text x="446" y="104" font-size="10.5" font-weight="700" fill="#1f2937" text-anchor="start">Pengendalian Awal</text>
+<text x="725" y="104" font-size="10.5" font-weight="700" fill="#1f2937" text-anchor="middle">Nilai</text>
+<text x="870" y="104" font-size="10.5" font-weight="700" fill="#1f2937" text-anchor="middle">Tingkat</text>
+<line x1="0" y1="111" x2="980" y2="111" stroke="#e5e7eb" stroke-width="0.5"/>
+<rect x="0" y="111" width="980" height="23" fill="#fcfcfd"/>
+<rect x="0" y="111" width="30" height="23" fill="#f3f4f6"/>
+<text x="47" y="127" font-size="10" font-weight="400" fill="#1f2937" text-anchor="middle">1</text>
+<text x="70" y="127" font-size="10.5" font-weight="400" fill="#1d4ed8" text-anchor="start">Galian tanah pondasi</text>
+<text x="256" y="127" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="start">Longsor; pekerja terjatuh</text>
+<text x="446" y="127" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="start">Turap/sloping, barikade, rambu</text>
+<text x="725" y="127" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="middle">12</text>
+<rect x="761" y="112" width="218" height="21" fill="#fde68a"/>
+<text x="870" y="127" font-size="10.5" font-weight="400" fill="#b45309" text-anchor="middle">SEDANG</text>
+<line x1="0" y1="134" x2="980" y2="134" stroke="#e5e7eb" stroke-width="0.5"/>
+<rect x="0" y="134" width="980" height="23" fill="#ffffff"/>
+<rect x="0" y="134" width="30" height="23" fill="#f3f4f6"/>
+<text x="47" y="150" font-size="10" font-weight="400" fill="#1f2937" text-anchor="middle">2</text>
+<text x="70" y="150" font-size="10.5" font-weight="400" fill="#1d4ed8" text-anchor="start">Pekerjaan di ketinggian</text>
+<text x="256" y="150" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="start">Jatuh dari ketinggian</text>
+<text x="446" y="150" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="start">Body harness, lifeline, perancah</text>
+<text x="725" y="150" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="middle">20</text>
+<rect x="761" y="135" width="218" height="21" fill="#fecaca"/>
+<text x="870" y="150" font-size="10.5" font-weight="400" fill="#b91c1c" text-anchor="middle">BESAR</text>
+<line x1="0" y1="157" x2="980" y2="157" stroke="#e5e7eb" stroke-width="0.5"/>
+<rect x="0" y="157" width="980" height="23" fill="#fcfcfd"/>
+<rect x="0" y="157" width="30" height="23" fill="#f3f4f6"/>
+<text x="47" y="173" font-size="10" font-weight="400" fill="#1f2937" text-anchor="middle">3</text>
+<text x="70" y="173" font-size="10.5" font-weight="400" fill="#1d4ed8" text-anchor="start">Pekerjaan pengelasan</text>
+<text x="256" y="173" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="start">Percikan api, kebakaran</text>
+<text x="446" y="173" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="start">Kacamata las, APAR, fire watch</text>
+<text x="725" y="173" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="middle">9</text>
+<rect x="761" y="158" width="218" height="21" fill="#fde68a"/>
+<text x="870" y="173" font-size="10.5" font-weight="400" fill="#b45309" text-anchor="middle">SEDANG</text>
+<line x1="0" y1="180" x2="980" y2="180" stroke="#e5e7eb" stroke-width="0.5"/>
+<rect x="0" y="180" width="980" height="23" fill="#ffffff"/>
+<rect x="0" y="180" width="30" height="23" fill="#f3f4f6"/>
+<text x="47" y="196" font-size="10" font-weight="400" fill="#1f2937" text-anchor="middle">4</text>
+<text x="70" y="196" font-size="10.5" font-weight="400" fill="#1d4ed8" text-anchor="start">Mobilisasi alat berat</text>
+<text x="256" y="196" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="start">Tertabrak, terguling</text>
+<text x="446" y="196" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="start">Operator SIO, flagman, area steril</text>
+<text x="725" y="196" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="middle">12</text>
+<rect x="761" y="181" width="218" height="21" fill="#fde68a"/>
+<text x="870" y="196" font-size="10.5" font-weight="400" fill="#b45309" text-anchor="middle">SEDANG</text>
+<line x1="0" y1="203" x2="980" y2="203" stroke="#e5e7eb" stroke-width="0.5"/>
+<rect x="0" y="203" width="980" height="23" fill="#fcfcfd"/>
+<rect x="0" y="203" width="30" height="23" fill="#f3f4f6"/>
+<text x="47" y="219" font-size="10" font-weight="400" fill="#1f2937" text-anchor="middle">5</text>
+<text x="70" y="219" font-size="10.5" font-weight="400" fill="#1d4ed8" text-anchor="start">Pekerjaan pembesian</text>
+<text x="256" y="219" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="start">Tertusuk besi, tergores</text>
+<text x="446" y="219" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="start">Sarung tangan, sepatu safety</text>
+<text x="725" y="219" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="middle">8</text>
+<rect x="761" y="204" width="218" height="21" fill="#fde68a"/>
+<text x="870" y="219" font-size="10.5" font-weight="400" fill="#b45309" text-anchor="middle">SEDANG</text>
+<line x1="0" y1="226" x2="980" y2="226" stroke="#e5e7eb" stroke-width="0.5"/>
+<rect x="0" y="226" width="980" height="23" fill="#ffffff"/>
+<rect x="0" y="226" width="30" height="23" fill="#f3f4f6"/>
+<text x="47" y="242" font-size="10" font-weight="400" fill="#1f2937" text-anchor="middle">6</text>
+<text x="70" y="242" font-size="10.5" font-weight="400" fill="#1d4ed8" text-anchor="start">Instalasi listrik sementara</text>
+<text x="256" y="242" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="start">Sengatan listrik, korsleting</text>
+<text x="446" y="242" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="start">Panel ber-ELCB, prosedur LOTO</text>
+<text x="725" y="242" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="middle">15</text>
+<rect x="761" y="227" width="218" height="21" fill="#fecaca"/>
+<text x="870" y="242" font-size="10.5" font-weight="400" fill="#b91c1c" text-anchor="middle">BESAR</text>
+<line x1="0" y1="249" x2="980" y2="249" stroke="#e5e7eb" stroke-width="0.5"/>
+<rect x="0" y="249" width="980" height="23" fill="#fcfcfd"/>
+<rect x="0" y="249" width="30" height="23" fill="#f3f4f6"/>
+<text x="47" y="265" font-size="10" font-weight="400" fill="#1f2937" text-anchor="middle">7</text>
+<text x="70" y="265" font-size="10.5" font-weight="400" fill="#1d4ed8" text-anchor="start">Pengecoran beton</text>
+<text x="256" y="265" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="start">Iritasi kulit/mata, kelelahan</text>
+<text x="446" y="265" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="start">APD lengkap, atur jam kerja</text>
+<text x="725" y="265" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="middle">6</text>
+<rect x="761" y="250" width="218" height="21" fill="#fde68a"/>
+<text x="870" y="265" font-size="10.5" font-weight="400" fill="#b45309" text-anchor="middle">SEDANG</text>
+<line x1="0" y1="272" x2="980" y2="272" stroke="#e5e7eb" stroke-width="0.5"/>
+<line x1="30" y1="18" x2="30" y2="272" stroke="#e5e7eb" stroke-width="0.5"/>
+<line x1="30" y1="88" x2="30" y2="272" stroke="#e5e7eb" stroke-width="0.5"/>
+<line x1="64" y1="88" x2="64" y2="272" stroke="#e5e7eb" stroke-width="0.5"/>
+<line x1="250" y1="88" x2="250" y2="272" stroke="#e5e7eb" stroke-width="0.5"/>
+<line x1="440" y1="88" x2="440" y2="272" stroke="#e5e7eb" stroke-width="0.5"/>
+<line x1="690" y1="88" x2="690" y2="272" stroke="#e5e7eb" stroke-width="0.5"/>
+<line x1="760" y1="88" x2="760" y2="272" stroke="#e5e7eb" stroke-width="0.5"/>
+<line x1="980" y1="88" x2="980" y2="272" stroke="#e5e7eb" stroke-width="0.5"/>
+</svg>

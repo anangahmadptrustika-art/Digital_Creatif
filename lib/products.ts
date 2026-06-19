@@ -23,6 +23,12 @@ export type Product = {
   badge?: string;
   /** Tandai produk unggulan (ditonjolkan di UI). */
   bestSeller?: boolean;
+  /** Nama file untuk judul bingkai jendela di galeri preview. */
+  previewFile?: string;
+  /** Label tab sheet (ala Excel) yang ditampilkan di galeri preview. */
+  previewTabs?: string[];
+  /** Daftar gambar preview isi template (aman ditampilkan ke publik). */
+  previews?: { src: string; sheet: string; caption: string }[];
   /** Link download produk yang dikirim setelah pembayaran sukses. RAHASIA. */
   downloadUrl: string;
 };
@@ -50,6 +56,13 @@ export const PRODUCTS: Product[] = [
       "Rekap RAB & rekapitulasi otomatis",
       "Mudah diedit per item pekerjaan",
     ],
+    previewFile: "Template-RAB-AHSP-2026.xlsx",
+    previewTabs: ["Sheet1", "HSD", "AHSP", "RAB", "BACKUP VOLUME"],
+    previews: [
+      { src: "/preview/rab.svg", sheet: "RAB", caption: "RAB otomatis — tinggal isi volume, harga langsung muncul" },
+      { src: "/preview/ahsp.svg", sheet: "AHSP", caption: "Analisa Harga Satuan (AHSP 2026) sesuai Permen PUPR" },
+      { src: "/preview/volume.svg", sheet: "BACKUP VOLUME", caption: "Backup perhitungan volume tersinkron ke RAB" },
+    ],
     downloadUrl:
       process.env.PRODUCT_LINK_RAB_AHSP_2026 ||
       "https://example.com/download/template-rab-ahsp-2026.xlsx",
@@ -70,6 +83,13 @@ export const PRODUCTS: Product[] = [
       "HIRARC & JSA siap pakai",
       "Struktur organisasi K3",
       "Untuk kelengkapan tender",
+    ],
+    previewFile: "Dokumen-RKK-SMKK.xlsx",
+    previewTabs: ["PETUNJUK", "DATA PROYEK", "DAFTAR ISI", "STRUKTUR ORGANISASI", "IBPRP"],
+    previews: [
+      { src: "/preview/rkk-data.svg", sheet: "DATA PROYEK", caption: "Isi data proyek sekali — mengalir ke semua dokumen RKK" },
+      { src: "/preview/rkk-daftarisi.svg", sheet: "DAFTAR ISI", caption: "Kerangka RKK lengkap sesuai elemen SMKK (A–E)" },
+      { src: "/preview/rkk-ibprp.svg", sheet: "IBPRP", caption: "Identifikasi bahaya & risiko — nilai & tingkat otomatis" },
     ],
     downloadUrl:
       process.env.PRODUCT_LINK_RKK_SMKK ||

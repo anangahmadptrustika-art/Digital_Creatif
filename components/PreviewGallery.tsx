@@ -2,32 +2,32 @@
 
 import { useEffect, useState } from "react";
 
-// Galeri preview isi template, ditampilkan dalam bingkai "jendela Excel"
-// dengan animasi (fade + ken-burns) dan autoplay. Membangun kepercayaan calon
-// pembeli dengan memperlihatkan isi file yang sebenarnya.
-//
-// 💡 Ganti gambar di /public/preview/*.svg dengan SCREENSHOT ASLI (.png) file
-// Excel-mu untuk hasil paling meyakinkan — cukup sesuaikan `src` di bawah.
+// Galeri preview isi template dalam bingkai "jendela Excel" dengan animasi
+// (fade + ken-burns) dan autoplay. Prop-driven agar bisa dipakai per produk.
 
-const SLIDES = [
-  { src: "/preview/rab.svg", sheet: "RAB", caption: "RAB otomatis — tinggal isi volume, harga langsung muncul" },
-  { src: "/preview/ahsp.svg", sheet: "AHSP", caption: "Analisa Harga Satuan (AHSP 2026) sesuai Permen PUPR" },
-  { src: "/preview/volume.svg", sheet: "BACKUP VOLUME", caption: "Backup perhitungan volume tersinkron ke RAB" },
-];
+export type PreviewSlide = { src: string; sheet: string; caption: string };
 
-const TABS = ["Sheet1", "HSD", "AHSP", "RAB", "BACKUP VOLUME"];
-
-export default function PreviewGallery() {
+export default function PreviewGallery({
+  slides,
+  tabs,
+  fileName = "Template.xlsx",
+}: {
+  slides: PreviewSlide[];
+  tabs: string[];
+  fileName?: string;
+}) {
   const [active, setActive] = useState(0);
 
   useEffect(() => {
+    if (slides.length <= 1) return;
     const id = setInterval(() => {
-      setActive((a) => (a + 1) % SLIDES.length);
+      setActive((a) => (a + 1) % slides.length);
     }, 3500);
     return () => clearInterval(id);
-  }, []);
+  }, [slides.length]);
 
-  const activeSheet = SLIDES[active].sheet;
+  if (!slides.length) return null;
+  const activeSheet = slides[active].sheet;
 
   return (
     <div>
@@ -44,13 +44,13 @@ export default function PreviewGallery() {
             <span className="grid h-4 w-4 place-items-center rounded bg-emerald-600 text-[8px] font-bold text-white">
               X
             </span>
-            Template-RAB-AHSP-2026.xlsx
+            {fileName}
           </span>
         </div>
 
         {/* Area gambar dengan animasi */}
         <div className="relative aspect-[16/11] w-full overflow-hidden bg-slate-50">
-          {SLIDES.map((slide, i) => (
+          {slides.map((slide, i) => (
             // eslint-disable-next-line @next/next/no-img-element
             <img
               key={slide.src}
@@ -62,7 +62,6 @@ export default function PreviewGallery() {
               }`}
             />
           ))}
-          {/* Badge AHSP 2026 */}
           <span className="absolute right-2 top-2 rounded-full bg-brand-600/95 px-2.5 py-1 text-[10px] font-bold text-white shadow">
             ✓ AHSP 2026
           </span>
@@ -70,7 +69,7 @@ export default function PreviewGallery() {
 
         {/* Tab sheet ala Excel */}
         <div className="flex items-center gap-0 overflow-x-auto border-t border-slate-200 bg-slate-100 px-1.5 py-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-          {TABS.map((tab) => {
+          {tabs.map((tab) => {
             const isActive = tab === activeSheet;
             return (
               <span
@@ -90,10 +89,10 @@ export default function PreviewGallery() {
 
       {/* Caption + indikator */}
       <p className="mt-3 text-center text-[13px] font-medium text-slate-600">
-        {SLIDES[active].caption}
+        {slides[active].caption}
       </p>
       <div className="mt-2 flex justify-center gap-1.5">
-        {SLIDES.map((s, i) => (
+        {slides.map((s, i) => (
           <button
             key={s.src}
             onClick={() => setActive(i)}

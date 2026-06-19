@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 536" font-family="Segoe UI, Arial, sans-serif">
+<rect width="980" height="536" fill="#ffffff"/>
+<rect width="980" height="18" fill="#eef2f7"/>
+<rect x="0" y="0" width="30" height="18" fill="#f3f4f6"/>
+<text x="75" y="13" font-size="10" fill="#94a3b8" text-anchor="middle">A</text>
+<text x="550" y="13" font-size="10" fill="#94a3b8" text-anchor="middle">B</text>
+<rect x="30" y="18" width="950" height="30" fill="#1e3a5f"/>
+<text x="505" y="39" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">KERANGKA / DAFTAR ISI RKK</text>
+<rect x="30" y="48" width="950" height="22" fill="#f59e0b"/>
+<text x="505" y="64" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">Elemen Sistem Manajemen Keselamatan Konstruksi (SMKK)</text>
+<rect x="0" y="70" width="980" height="23" fill="#1e3a5f"/>
+<rect x="0" y="70" width="30" height="23" fill="#f3f4f6"/>
+<text x="75" y="86" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">A</text>
+<text x="128" y="86" font-size="10.5" font-weight="700" fill="#ffffff">KEPEMIMPINAN &amp; PARTISIPASI TENAGA KERJA DALAM KESELAMATAN KONSTRUKSI</text>
+<line x1="0" y1="93" x2="980" y2="93" stroke="#e5e7eb" stroke-width="0.5"/>
+<rect x="0" y="93" width="980" height="23" fill="#fcfcfd"/>
+<rect x="0" y="93" width="30" height="23" fill="#f3f4f6"/>
+<text x="75" y="109" font-size="10" font-weight="400" fill="#b45309" text-anchor="middle">A.1</text>
+<text x="126" y="109" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="start">Kepedulian Pimpinan terhadap Isu Eksternal dan Internal</text>
+<line x1="0" y1="116" x2="980" y2="116" stroke="#e5e7eb" stroke-width="0.5"/>
+<rect x="0" y="116" width="980" height="23" fill="#ffffff"/>
+<rect x="0" y="116" width="30" height="23" fill="#f3f4f6"/>
+<text x="75" y="132" font-size="10" font-weight="400" fill="#b45309" text-anchor="middle">A.2</text>
+<text x="126" y="132" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="start">Komitmen Keselamatan Konstruksi (Pakta Komitmen)</text>
+<line x1="0" y1="139" x2="980" y2="139" stroke="#e5e7eb" stroke-width="0.5"/>
+<rect x="0" y="139" width="980" height="23" fill="#fcfcfd"/>
+<rect x="0" y="139" width="30" height="23" fill="#f3f4f6"/>
+<text x="75" y="155" font-size="10" font-weight="400" fill="#b45309" text-anchor="middle">A.3</text>
+<text x="126" y="155" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="start">Organisasi Pengelola SMKK – Unit Keselamatan Konstruksi (UKK)</text>
+<line x1="0" y1="162" x2="980" y2="162" stroke="#e5e7eb" stroke-width="0.5"/>
+<rect x="0" y="162" width="980" height="23" fill="#1e3a5f"/>
+<rect x="0" y="162" width="30" height="23" fill="#f3f4f6"/>
+<text x="75" y="178" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">B</text>
+<text x="128" y="178" font-size="10.5" font-weight="700" fill="#ffffff">PERENCANAAN KESELAMATAN KONSTRUKSI</text>
+<line x1="0" y1="185" x2="980" y2="185" stroke="#e5e7eb" stroke-width="0.5"/>
+<rect x="0" y="185" width="980" height="23" fill="#fcfcfd"/>
+<rect x="0" y="185" width="30" height="23" fill="#f3f4f6"/>
+<text x="75" y="201" font-size="10" font-weight="400" fill="#b45309" text-anchor="middle">B.1</text>
+<text x="126" y="201" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="start">Identifikasi Bahaya, Penilaian Risiko, Pengendalian &amp; Peluang (IBPRP)</text>
+<line x1="0" y1="208" x2="980" y2="208" stroke="#e5e7eb" stroke-width="0.5"/>
+<rect x="0" y="208" width="980" height="23" fill="#ffffff"/>
+<rect x="0" y="208" width="30" height="23" fill="#f3f4f6"/>
+<text x="75" y="224" font-size="10" font-weight="400" fill="#b45309" text-anchor="middle">B.2</text>
+<text x="126" y="224" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="start">Rencana Tindakan: Sasaran Khusus &amp; Program Khusus</text>
+<line x1="0" y1="231" x2="980" y2="231" stroke="#e5e7eb" stroke-width="0.5"/>
+<rect x="0" y="231" width="980" height="23" fill="#fcfcfd"/>
+<rect x="0" y="231" width="30" height="23" fill="#f3f4f6"/>
+<text x="75" y="247" font-size="10" font-weight="400" fill="#b45309" text-anchor="middle">B.3</text>
+<text x="126" y="247" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="start">Standar dan Peraturan Perundang-undangan</text>
+<line x1="0" y1="254" x2="980" y2="254" stroke="#e5e7eb" stroke-width="0.5"/>
+<rect x="0" y="254" width="980" height="23" fill="#1e3a5f"/>
+<rect x="0" y="254" width="30" height="23" fill="#f3f4f6"/>
+<text x="75" y="270" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">C</text>
+<text x="128" y="270" font-size="10.5" font-weight="700" fill="#ffffff">DUKUNGAN KESELAMATAN KONSTRUKSI</text>
+<line x1="0" y1="277" x2="980" y2="277" stroke="#e5e7eb" stroke-width="0.5"/>
+<rect x="0" y="277" width="980" height="23" fill="#fcfcfd"/>
+<rect x="0" y="277" width="30" height="23" fill="#f3f4f6"/>
+<text x="75" y="293" font-size="10" font-weight="400" fill="#b45309" text-anchor="middle">C.1</text>
+<text x="126" y="293" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="start">Sumber Daya (Peralatan, Material, Biaya SMKK)</text>
+<line x1="0" y1="300" x2="980" y2="300" stroke="#e5e7eb" stroke-width="0.5"/>
+<rect x="0" y="300" width="980" height="23" fill="#ffffff"/>
+<rect x="0" y="300" width="30" height="23" fill="#f3f4f6"/>
+<text x="75" y="316" font-size="10" font-weight="400" fill="#b45309" text-anchor="middle">C.2</text>
+<text x="126" y="316" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="start">Kompetensi Tenaga Kerja</text>
+<line x1="0" y1="323" x2="980" y2="323" stroke="#e5e7eb" stroke-width="0.5"/>
+<rect x="0" y="323" width="980" height="23" fill="#fcfcfd"/>
+<rect x="0" y="323" width="30" height="23" fill="#f3f4f6"/>
+<text x="75" y="339" font-size="10" font-weight="400" fill="#b45309" text-anchor="middle">C.3</text>
+<text x="126" y="339" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="start">Kepedulian &amp; Komunikasi</text>
+<line x1="0" y1="346" x2="980" y2="346" stroke="#e5e7eb" stroke-width="0.5"/>
+<rect x="0" y="346" width="980" height="23" fill="#ffffff"/>
+<rect x="0" y="346" width="30" height="23" fill="#f3f4f6"/>
+<text x="75" y="362" font-size="10" font-weight="400" fill="#b45309" text-anchor="middle">C.4</text>
+<text x="126" y="362" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="start">Informasi Terdokumentasi</text>
+<line x1="0" y1="369" x2="980" y2="369" stroke="#e5e7eb" stroke-width="0.5"/>
+<rect x="0" y="369" width="980" height="23" fill="#1e3a5f"/>
+<rect x="0" y="369" width="30" height="23" fill="#f3f4f6"/>
+<text x="75" y="385" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">D</text>
+<text x="128" y="385" font-size="10.5" font-weight="700" fill="#ffffff">OPERASI KESELAMATAN KONSTRUKSI</text>
+<line x1="0" y1="392" x2="980" y2="392" stroke="#e5e7eb" stroke-width="0.5"/>
+<rect x="0" y="392" width="980" height="23" fill="#ffffff"/>
+<rect x="0" y="392" width="30" height="23" fill="#f3f4f6"/>
+<text x="75" y="408" font-size="10" font-weight="400" fill="#b45309" text-anchor="middle">D.1</text>
+<text x="126" y="408" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="start">Perencanaan &amp; Pengendalian Operasi (SOP, AKB/JSA, Izin Kerja, APD)</text>
+<line x1="0" y1="415" x2="980" y2="415" stroke="#e5e7eb" stroke-width="0.5"/>
+<rect x="0" y="415" width="980" height="23" fill="#fcfcfd"/>
+<rect x="0" y="415" width="30" height="23" fill="#f3f4f6"/>
+<text x="75" y="431" font-size="10" font-weight="400" fill="#b45309" text-anchor="middle">D.2</text>
+<text x="126" y="431" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="start">Kesiapan &amp; Tanggap Darurat</text>
+<line x1="0" y1="438" x2="980" y2="438" stroke="#e5e7eb" stroke-width="0.5"/>
+<rect x="0" y="438" width="980" height="23" fill="#1e3a5f"/>
+<rect x="0" y="438" width="30" height="23" fill="#f3f4f6"/>
+<text x="75" y="454" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">E</text>
+<text x="128" y="454" font-size="10.5" font-weight="700" fill="#ffffff">EVALUASI KINERJA KESELAMATAN KONSTRUKSI</text>
+<line x1="0" y1="461" x2="980" y2="461" stroke="#e5e7eb" stroke-width="0.5"/>
+<rect x="0" y="461" width="980" height="23" fill="#fcfcfd"/>
+<rect x="0" y="461" width="30" height="23" fill="#f3f4f6"/>
+<text x="75" y="477" font-size="10" font-weight="400" fill="#b45309" text-anchor="middle">E.1</text>
+<text x="126" y="477" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="start">Pemantauan &amp; Inspeksi</text>
+<line x1="0" y1="484" x2="980" y2="484" stroke="#e5e7eb" stroke-width="0.5"/>
+<rect x="0" y="484" width="980" height="23" fill="#ffffff"/>
+<rect x="0" y="484" width="30" height="23" fill="#f3f4f6"/>
+<text x="75" y="500" font-size="10" font-weight="400" fill="#b45309" text-anchor="middle">E.2</text>
+<text x="126" y="500" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="start">Audit Internal</text>
+<line x1="0" y1="507" x2="980" y2="507" stroke="#e5e7eb" stroke-width="0.5"/>
+<rect x="0" y="507" width="980" height="23" fill="#fcfcfd"/>
+<rect x="0" y="507" width="30" height="23" fill="#f3f4f6"/>
+<text x="75" y="523" font-size="10" font-weight="400" fill="#b45309" text-anchor="middle">E.3</text>
+<text x="126" y="523" font-size="10.5" font-weight="400" fill="#1f2937" text-anchor="start">Tinjauan Manajemen &amp; Peningkatan Kinerja</text>
+<line x1="0" y1="530" x2="980" y2="530" stroke="#e5e7eb" stroke-width="0.5"/>
+<line x1="30" y1="18" x2="30" y2="530" stroke="#e5e7eb" stroke-width="0.5"/>
+<line x1="30" y1="70" x2="30" y2="530" stroke="#e5e7eb" stroke-width="0.5"/>
+<line x1="120" y1="70" x2="120" y2="530" stroke="#e5e7eb" stroke-width="0.5"/>
+<line x1="980" y1="70" x2="980" y2="530" stroke="#e5e7eb" stroke-width="0.5"/>
+</svg>

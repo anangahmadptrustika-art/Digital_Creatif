@@ -89,6 +89,8 @@ const FAQS = [
 
 export default function HomePage() {
   const products = getPublicProducts();
+  const flagshipRab = products.find((p) => p.id === "rab-ahsp-2026");
+  const flagshipRkk = products.find((p) => p.id === "rkk-smkk");
 
   return (
     <div className="min-h-screen bg-slate-100 bg-[radial-gradient(circle_at_1px_1px,theme(colors.slate.300)_1px,transparent_0)] [background-size:22px_22px]">
@@ -206,11 +208,35 @@ export default function HomePage() {
               Intip Isi Templatenya
             </h2>
             <p className="mt-1 text-sm text-slate-500">
-              Bukan kucing dalam karung — ini tampilan asli sheet AHSP, RAB &amp;
-              Backup Volume.
+              Bukan kucing dalam karung — ini tampilan asli isi file.
             </p>
           </div>
-          <PreviewGallery />
+
+          {flagshipRab?.previews && (
+            <div className="mb-7">
+              <p className="mb-2 text-sm font-bold text-brand-700">
+                📊 Template RAB + AHSP 2026
+              </p>
+              <PreviewGallery
+                slides={flagshipRab.previews}
+                tabs={flagshipRab.previewTabs || []}
+                fileName={flagshipRab.previewFile}
+              />
+            </div>
+          )}
+
+          {flagshipRkk?.previews && (
+            <div>
+              <p className="mb-2 text-sm font-bold text-brand-700">
+                🦺 Dokumen RKK (SMKK)
+              </p>
+              <PreviewGallery
+                slides={flagshipRkk.previews}
+                tabs={flagshipRkk.previewTabs || []}
+                fileName={flagshipRkk.previewFile}
+              />
+            </div>
+          )}
         </section>
 
         {/* ===== Cocok untuk ===== */}

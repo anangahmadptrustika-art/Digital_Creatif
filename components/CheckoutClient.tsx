@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import PreviewGallery, { PreviewSlide } from "./PreviewGallery";
 
 type Props = {
   productId: string;
@@ -10,6 +11,9 @@ type Props = {
   emoji: string;
   price: number;
   priceLabel: string;
+  previews?: PreviewSlide[];
+  previewTabs?: string[];
+  previewFile?: string;
 };
 
 type Stage = "form" | "pay" | "paid";
@@ -138,6 +142,20 @@ export default function CheckoutClient(props: Props) {
       {error && (
         <div className="mt-4 rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-700">
           {error}
+        </div>
+      )}
+
+      {/* Galeri preview isi produk (hanya di tahap form) */}
+      {stage === "form" && props.previews && props.previews.length > 0 && (
+        <div className="mt-6">
+          <p className="mb-2 text-sm font-bold text-slate-700">
+            👀 Intip isi templatenya
+          </p>
+          <PreviewGallery
+            slides={props.previews}
+            tabs={props.previewTabs || []}
+            fileName={props.previewFile}
+          />
         </div>
       )}
 
