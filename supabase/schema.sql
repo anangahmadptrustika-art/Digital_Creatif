@@ -1,5 +1,5 @@
 -- ============================================================================
--- Skema tabel `orders` untuk Digital Creatif.
+-- Skema tabel `orders` untuk RAB Creatif.
 --
 -- Cara pakai:
 --   1. Buka project Supabase kamu -> menu "SQL Editor"

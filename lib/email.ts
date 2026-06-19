@@ -12,7 +12,7 @@ import { formatRupiah } from "./products";
 //   SMTP_PORT=465
 //   SMTP_USER=emailkamu@gmail.com
 //   SMTP_PASS=xxxx xxxx xxxx xxxx   (App Password 16 digit)
-//   MAIL_FROM="Digital Creatif <emailkamu@gmail.com>"
+//   MAIL_FROM="RAB Creatif <emailkamu@gmail.com>"
 //
 // Jika SMTP belum dikonfigurasi, email akan di-LOG ke console (mode dev)
 // sehingga alur tetap berjalan tanpa kredensial.
@@ -23,7 +23,7 @@ const SMTP_PORT = Number(process.env.SMTP_PORT || 465);
 const SMTP_USER = process.env.SMTP_USER || "";
 const SMTP_PASS = process.env.SMTP_PASS || "";
 const MAIL_FROM =
-  process.env.MAIL_FROM || "Digital Creatif <no-reply@digitalcreatif.id>";
+  process.env.MAIL_FROM || "RAB Creatif <no-reply@digitalcreatif.id>";
 
 export const EMAIL_CONFIGURED = SMTP_HOST !== "" && SMTP_USER !== "";
 
@@ -114,7 +114,7 @@ function buildEmailHtml(params: {
       </div>
     </div>
     <p style="text-align:center;font-size:12px;color:#9ca3af;margin-top:16px">
-      © ${new Date().getFullYear()} Digital Creatif
+      © ${new Date().getFullYear()} RAB Creatif
     </p>
   </div>`;
 }

@@ -12,8 +12,8 @@ export async function generateMetadata({
   const product = getProductById(productId);
   return {
     title: product
-      ? `Checkout — ${product.name} | Digital Creatif`
-      : "Checkout | Digital Creatif",
+      ? `Checkout — ${product.name} | RAB Creatif`
+      : "Checkout | RAB Creatif",
   };
 }
 

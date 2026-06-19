@@ -5,20 +5,23 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "Digital Creatif — Template & Landing Page Premium",
+  title: "RAB Creatif — Template RAB AHSP 2026, RKK & Dokumen Proyek",
   description:
-    "Beli template website & landing page premium. Bayar pakai QRIS, link produk dikirim otomatis ke email kamu. Praktis, cepat, aman.",
+    "Jual template RAB dengan AHSP 2026 terbaru, RKK (SMKK), Kurva S, & laporan proyek format Excel untuk konsultan & kontraktor. Bayar QRIS, file dikirim otomatis ke email.",
   keywords: [
-    "template website",
-    "landing page",
-    "jual template",
-    "QRIS",
-    "template digital",
+    "template RAB",
+    "AHSP 2026",
+    "RKK SMKK",
+    "RAB Excel",
+    "kurva S",
+    "template konstruksi",
+    "konsultan kontraktor",
+    "analisa harga satuan",
   ],
   openGraph: {
-    title: "Digital Creatif — Template & Landing Page Premium",
+    title: "RAB Creatif — Template RAB AHSP 2026, RKK & Dokumen Proyek",
     description:
-      "Beli template premium, bayar QRIS, link produk dikirim otomatis ke email.",
+      "Template RAB + AHSP 2026, RKK, Kurva S & laporan proyek (Excel). Bayar QRIS, file dikirim otomatis ke email.",
     type: "website",
   },
 };

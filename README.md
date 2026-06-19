@@ -1,8 +1,10 @@
-# Digital Creatif — Landing Page Jual Template (QRIS Otomatis)
+# RAB Creatif — Landing Page Jual Template RAB/AHSP/RKK (QRIS Otomatis)
 
-Landing page untuk menjual template & landing page digital. Pembeli membayar
-lewat **QRIS (Midtrans)**, dan begitu pembayaran terkonfirmasi, **link download
-produk dikirim otomatis ke email** pembeli.
+Landing page (tampilan mobile/aplikasi, cocok dipromosikan di Instagram) untuk
+menjual template dokumen proyek konstruksi: **RAB + AHSP 2026, RKK (SMKK),
+Kurva S, & laporan proyek** format Excel — untuk konsultan & kontraktor.
+Pembeli membayar lewat **QRIS (Midtrans)**, dan begitu pembayaran terkonfirmasi,
+**link download file dikirim otomatis ke email** pembeli.
 
 > ✨ Bisa langsung dijalankan tanpa konfigurasi apa pun dalam **Mode Demo**
 > (pembayaran & email disimulasikan), lalu tinggal isi kredensial untuk go-live.

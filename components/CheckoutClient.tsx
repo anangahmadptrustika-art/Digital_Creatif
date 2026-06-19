@@ -109,7 +109,7 @@ export default function CheckoutClient(props: Props) {
   }
 
   return (
-    <div className="mx-auto max-w-2xl px-5 py-10">
+    <div className="mx-auto max-w-[480px] px-5 py-8">
       <Link
         href="/"
         className="inline-flex items-center gap-1.5 text-sm font-medium text-slate-500 hover:text-brand-600"
