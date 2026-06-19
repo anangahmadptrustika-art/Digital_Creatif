@@ -1,11 +1,14 @@
-import { getOrder, updateOrder } from "./store";
+import { getOrder, updateOrder, claimEmailDelivery } from "./store";
 import { getProductById } from "./products";
 import { sendProductEmail } from "./email";
 
 // =============================================================================
 // Logika "fulfillment": dipanggil ketika sebuah order sudah LUNAS.
 // Menandai order sebagai paid dan mengirim email link produk SATU KALI saja.
-// Aman dipanggil berulang (idempotent) — email tidak akan dikirim dua kali.
+//
+// Aman dipanggil berulang & bersamaan (idempotent): pengiriman email diklaim
+// secara ATOMIK lewat claimEmailDelivery(), sehingga walau webhook & polling
+// memicu fulfillment di waktu yang sama, email hanya terkirim sekali.
 // =============================================================================
 
 export async function fulfillPaidOrder(orderId: string): Promise<void> {
@@ -15,21 +18,24 @@ export async function fulfillPaidOrder(orderId: string): Promise<void> {
     return;
   }
 
-  // Jika email sudah pernah dikirim, jangan kirim lagi.
-  if (order.status === "paid" && order.deliveryEmailSent) {
-    return;
-  }
-
   const product = getProductById(order.productId);
   if (!product) {
     console.warn(`[fulfillment] Produk tidak ditemukan: ${order.productId}`);
     return;
   }
 
-  await updateOrder(orderId, {
-    status: "paid",
-    paidAt: order.paidAt || new Date().toISOString(),
-  });
+  // Tandai lunas (idempotent — aman walau sudah paid).
+  if (order.status !== "paid") {
+    await updateOrder(orderId, {
+      status: "paid",
+      paidAt: order.paidAt || new Date().toISOString(),
+    });
+  }
+
+  // Klaim hak kirim email secara atomik. Jika gagal klaim, berarti sudah/
+  // sedang dikirim pihak lain -> berhenti tanpa kirim ulang.
+  const claimed = await claimEmailDelivery(orderId);
+  if (!claimed) return;
 
   try {
     await sendProductEmail({
@@ -39,9 +45,9 @@ export async function fulfillPaidOrder(orderId: string): Promise<void> {
       orderId: order.orderId,
       amount: order.amount,
     });
-    await updateOrder(orderId, { deliveryEmailSent: true });
   } catch (err) {
-    // Jangan menandai email terkirim bila gagal, agar bisa di-retry.
+    // Gagal kirim: lepaskan klaim agar bisa di-retry pada pemicu berikutnya.
+    await updateOrder(orderId, { deliveryEmailSent: false });
     console.error(`[fulfillment] Gagal kirim email untuk ${orderId}:`, err);
     throw err;
   }

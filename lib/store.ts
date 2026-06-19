@@ -1,77 +1,34 @@
-import { promises as fs } from "fs";
-import path from "path";
+import type { StoreBackend } from "./store-types";
+import { fileStore } from "./store-file";
+import { supabaseStore } from "./store-supabase";
 
 // =============================================================================
-// Penyimpanan order sederhana berbasis file JSON.
+// Dispatcher penyimpanan order.
 //
-// ⚠️  PENTING UNTUK PRODUKSI:
-// Penyimpanan berbasis file TIDAK cocok untuk lingkungan serverless (Vercel,
-// Netlify) karena filesystem-nya ephemeral / tidak persisten antar request.
-// Untuk produksi, ganti implementasi di file ini dengan database sungguhan
-// (Postgres/Supabase, MySQL/PlanetScale, MongoDB, dll). Bentuk fungsinya
-// sudah dibuat async agar mudah ditukar tanpa mengubah kode pemanggil.
+// Memilih backend secara otomatis:
+//   - Jika SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY terisi  -> Supabase (produksi)
+//   - Jika tidak                                            -> file JSON (dev/lokal)
+//
+// Kode pemanggil (API route, fulfillment) cukup import dari "@/lib/store"
+// tanpa peduli backend mana yang dipakai.
 // =============================================================================
 
-export type OrderStatus = "pending" | "paid" | "failed" | "expired";
+export type { Order, OrderStatus, NewOrder } from "./store-types";
 
-export type Order = {
-  orderId: string;
-  productId: string;
-  productName: string;
-  email: string;
-  amount: number;
-  status: OrderStatus;
-  /** String QRIS mentah dari Midtrans (untuk di-render jadi QR). */
-  qrString?: string;
-  /** URL gambar QR dari Midtrans (jika tersedia). */
-  qrUrl?: string;
-  /** Penanda apakah email produk sudah dikirim (mencegah kirim ganda). */
-  deliveryEmailSent: boolean;
-  createdAt: string;
-  paidAt?: string;
-};
+export const USING_SUPABASE =
+  !!process.env.SUPABASE_URL && !!process.env.SUPABASE_SERVICE_ROLE_KEY;
 
-const DATA_DIR = path.join(process.cwd(), ".data");
-const DATA_FILE = path.join(DATA_DIR, "orders.json");
+const backend: StoreBackend = USING_SUPABASE ? supabaseStore : fileStore;
 
-async function readAll(): Promise<Record<string, Order>> {
-  try {
-    const raw = await fs.readFile(DATA_FILE, "utf-8");
-    return JSON.parse(raw) as Record<string, Order>;
-  } catch {
-    return {};
-  }
-}
+export const createOrder: StoreBackend["createOrder"] = (order) =>
+  backend.createOrder(order);
 
-async function writeAll(orders: Record<string, Order>): Promise<void> {
-  await fs.mkdir(DATA_DIR, { recursive: true });
-  await fs.writeFile(DATA_FILE, JSON.stringify(orders, null, 2), "utf-8");
-}
+export const getOrder: StoreBackend["getOrder"] = (orderId) =>
+  backend.getOrder(orderId);
 
-export async function createOrder(
-  order: Omit<Order, "deliveryEmailSent">
-): Promise<Order> {
-  const orders = await readAll();
-  const full: Order = { ...order, deliveryEmailSent: false };
-  orders[order.orderId] = full;
-  await writeAll(orders);
-  return full;
-}
+export const updateOrder: StoreBackend["updateOrder"] = (orderId, patch) =>
+  backend.updateOrder(orderId, patch);
 
-export async function getOrder(orderId: string): Promise<Order | undefined> {
-  const orders = await readAll();
-  return orders[orderId];
-}
-
-export async function updateOrder(
-  orderId: string,
-  patch: Partial<Order>
-): Promise<Order | undefined> {
-  const orders = await readAll();
-  const existing = orders[orderId];
-  if (!existing) return undefined;
-  const updated = { ...existing, ...patch };
-  orders[orderId] = updated;
-  await writeAll(orders);
-  return updated;
-}
+export const claimEmailDelivery: StoreBackend["claimEmailDelivery"] = (
+  orderId
+) => backend.claimEmailDelivery(orderId);
