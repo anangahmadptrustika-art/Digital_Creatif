@@ -1,5 +1,7 @@
-import { getPublicProducts, CATEGORIES } from "@/lib/products";
+import Link from "next/link";
+import { getPublicProducts, CATEGORIES, formatRupiah } from "@/lib/products";
 import ProductExplorer from "@/components/ProductExplorer";
+import PreviewGallery from "@/components/PreviewGallery";
 
 const TRUST = [
   { icon: "📐", label: "AHSP 2026" },
@@ -148,6 +150,36 @@ export default function HomePage() {
             </a>
           </div>
 
+          {/* Banner promo RAB AHSP 2026 */}
+          <Link
+            href="/checkout/rab-ahsp-2026"
+            className="animate-fade-up mt-6 block overflow-hidden rounded-3xl bg-slate-900 p-0.5 shadow-xl active:scale-[0.99]"
+          >
+            <div className="animate-shimmer rounded-[22px] px-4 py-4 text-slate-900">
+              <div className="flex items-center justify-between gap-3">
+                <div>
+                  <p className="text-xs font-extrabold uppercase tracking-wide">
+                    🔥 Promo Terbatas
+                  </p>
+                  <p className="mt-0.5 text-sm font-bold leading-tight">
+                    Template RAB + AHSP 2026
+                  </p>
+                  <div className="mt-1 flex items-baseline gap-2">
+                    <span className="text-sm text-slate-700/70 line-through">
+                      {formatRupiah(1000000)}
+                    </span>
+                    <span className="text-2xl font-extrabold">
+                      {formatRupiah(250000)}
+                    </span>
+                  </div>
+                </div>
+                <span className="flex-shrink-0 rounded-2xl bg-slate-900 px-4 py-3 text-xs font-bold text-white">
+                  Ambil →
+                </span>
+              </div>
+            </div>
+          </Link>
+
           {/* Trust badges */}
           <div className="mt-6 grid grid-cols-4 gap-2">
             {TRUST.map((t) => (
@@ -162,6 +194,23 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+        </section>
+
+        {/* ===== Preview isi template (galeri animasi) ===== */}
+        <section id="preview" className="bg-white px-5 py-8">
+          <div className="mb-4">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-3 py-1 text-xs font-bold text-emerald-700">
+              👀 Lihat Isinya Dulu
+            </span>
+            <h2 className="mt-3 text-xl font-extrabold text-slate-900">
+              Intip Isi Templatenya
+            </h2>
+            <p className="mt-1 text-sm text-slate-500">
+              Bukan kucing dalam karung — ini tampilan asli sheet AHSP, RAB &amp;
+              Backup Volume.
+            </p>
+          </div>
+          <PreviewGallery />
         </section>
 
         {/* ===== Cocok untuk ===== */}
@@ -300,6 +349,7 @@ export default function HomePage() {
         {/* ===== Bottom navigation (ala aplikasi) ===== */}
         <nav className="fixed bottom-0 left-1/2 z-30 flex w-full max-w-[480px] -translate-x-1/2 items-center justify-around border-t border-slate-200 bg-white/95 px-2 py-2 backdrop-blur">
           <BottomLink href="#top" icon="🏠" label="Beranda" />
+          <BottomLink href="#preview" icon="👀" label="Isi" />
           <BottomLink href="#produk" icon="🗂️" label="Produk" />
           <BottomLink href="#cara" icon="📝" label="Cara" />
           <BottomLink href="#faq" icon="❓" label="FAQ" />

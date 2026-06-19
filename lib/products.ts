@@ -37,12 +37,12 @@ export const PRODUCTS: Product[] = [
     tagline: "RAB lengkap dengan AHSP terbaru 2026",
     description:
       "Template Rencana Anggaran Biaya (RAB) format Excel dengan database AHSP (Analisa Harga Satuan Pekerjaan) 2026 terbaru. Rumus otomatis: tinggal isi volume, RAB langsung terhitung. Cocok untuk konsultan perencana & kontraktor.",
-    price: 149000,
-    compareAtPrice: 350000,
+    price: 250000,
+    compareAtPrice: 1000000,
     category: "RAB & AHSP",
     emoji: "📊",
     format: "Excel (.xlsx)",
-    badge: "TERLARIS",
+    badge: "PROMO",
     bestSeller: false,
     features: [
       "Database AHSP 2026 terbaru",
