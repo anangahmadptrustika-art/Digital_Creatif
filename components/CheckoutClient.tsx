@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import PreviewGallery, { PreviewSlide } from "./PreviewGallery";
+import ExcelIcon from "./ExcelIcon";
 
 type Props = {
   productId: string;
@@ -123,8 +124,8 @@ export default function CheckoutClient(props: Props) {
 
       {/* Ringkasan produk */}
       <div className="mt-6 flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-5">
-        <div className="grid h-16 w-16 flex-shrink-0 place-items-center rounded-xl bg-gradient-to-br from-brand-50 to-brand-100 text-3xl">
-          {props.emoji}
+        <div className="h-16 w-16 flex-shrink-0">
+          <ExcelIcon className="h-full w-full" />
         </div>
         <div className="min-w-0">
           <h1 className="truncate text-lg font-bold text-slate-900">

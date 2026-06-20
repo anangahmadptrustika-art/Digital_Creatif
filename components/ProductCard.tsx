@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { PublicProduct, formatRupiah } from "@/lib/products";
+import ExcelIcon from "./ExcelIcon";
 
 export default function ProductCard({ product }: { product: PublicProduct }) {
   const discount = product.compareAtPrice
@@ -24,9 +25,9 @@ export default function ProductCard({ product }: { product: PublicProduct }) {
       )}
 
       <div className="flex gap-4 p-4">
-        {/* Ikon app-style */}
-        <div className="relative grid h-20 w-20 flex-shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-brand-500 to-brand-700 text-4xl shadow-inner">
-          <span aria-hidden>{product.emoji}</span>
+        {/* Ikon Excel */}
+        <div className="relative h-20 w-20 flex-shrink-0">
+          <ExcelIcon className="h-full w-full drop-shadow-sm" />
           {product.badge && (
             <span className="absolute -right-1.5 -top-1.5 rounded-full bg-accent-500 px-2 py-0.5 text-[10px] font-bold text-white shadow">
               {product.badge}
